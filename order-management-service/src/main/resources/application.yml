@@ -1,0 +1,21 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: ordering-management-service
+  data:
+    mongodb:
+      auto-index-creation: true
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
